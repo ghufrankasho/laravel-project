@@ -771,82 +771,82 @@ tabItems.forEach((item) => {
   });
 });
 
-// Countdown time
-const countDown = new Date("June 30, 2024 00:00:00").getTime();
-const setCountDown = setInterval(function () {
-  let now = new Date().getTime();
-  let distance = countDown - now;
+// // Countdown time
+// const countDown = new Date("June 30, 2024 00:00:00").getTime();
+// const setCountDown = setInterval(function () {
+//   let now = new Date().getTime();
+//   let distance = countDown - now;
 
-  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  if (days / 10 < 1) {
-    days = `0${days}`;
-  }
+//   let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   if (days / 10 < 1) {
+//     days = `0${days}`;
+//   }
 
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  if (hours / 10 < 1) {
-    hours = `0${hours}`;
-  }
+//   let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   if (hours / 10 < 1) {
+//     hours = `0${hours}`;
+//   }
 
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  if (minutes / 10 < 1) {
-    minutes = `0${minutes}`;
-  }
+//   let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   if (minutes / 10 < 1) {
+//     minutes = `0${minutes}`;
+//   }
 
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  if (seconds / 10 < 1) {
-    seconds = `0${seconds}`;
-  }
+//   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//   if (seconds / 10 < 1) {
+//     seconds = `0${seconds}`;
+//   }
 
-  const dayTime = document.querySelectorAll(".countdown-day");
-  const hourTime = document.querySelectorAll(".countdown-hour");
-  const minuteTime = document.querySelectorAll(".countdown-minute");
-  const secondTime = document.querySelectorAll(".countdown-second");
+//   const dayTime = document.querySelectorAll(".countdown-day");
+//   const hourTime = document.querySelectorAll(".countdown-hour");
+//   const minuteTime = document.querySelectorAll(".countdown-minute");
+//   const secondTime = document.querySelectorAll(".countdown-second");
 
-  if (dayTime) {
-    dayTime.forEach((time) => {
-      time.innerHTML = days;
-    });
-  }
-  if (hourTime) {
-    hourTime.forEach((time) => {
-      time.innerHTML = hours;
-    });
-  }
-  if (minuteTime) {
-    minuteTime.forEach((time) => {
-      time.innerHTML = minutes;
-    });
-  }
-  if (secondTime) {
-    secondTime.forEach((time) => {
-      time.innerHTML = seconds;
-    });
-  }
+//   if (dayTime) {
+//     dayTime.forEach((time) => {
+//       time.innerHTML = days;
+//     });
+//   }
+//   if (hourTime) {
+//     hourTime.forEach((time) => {
+//       time.innerHTML = hours;
+//     });
+//   }
+//   if (minuteTime) {
+//     minuteTime.forEach((time) => {
+//       time.innerHTML = minutes;
+//     });
+//   }
+//   if (secondTime) {
+//     secondTime.forEach((time) => {
+//       time.innerHTML = seconds;
+//     });
+//   }
 
-  if (distance < 0) {
-    clearInterval(x);
-    if (dayTime) {
-      dayTime.forEach((time) => {
-        time.innerHTML = "00";
-      });
-    }
-    if (hourTime) {
-      hourTime.forEach((time) => {
-        time.innerHTML = "00";
-      });
-    }
-    if (minuteTime) {
-      minuteTime.forEach((time) => {
-        time.innerHTML = "00";
-      });
-    }
-    if (secondTime) {
-      secondTime.forEach((time) => {
-        time.innerHTML = "00";
-      });
-    }
-  }
-}, 1000);
+//   if (distance < 0) {
+//     clearInterval(x);
+//     if (dayTime) {
+//       dayTime.forEach((time) => {
+//         time.innerHTML = "00";
+//       });
+//     }
+//     if (hourTime) {
+//       hourTime.forEach((time) => {
+//         time.innerHTML = "00";
+//       });
+//     }
+//     if (minuteTime) {
+//       minuteTime.forEach((time) => {
+//         time.innerHTML = "00";
+//       });
+//     }
+//     if (secondTime) {
+//       secondTime.forEach((time) => {
+//         time.innerHTML = "00";
+//       });
+//     }
+//   }
+// }, 1000);
 
 // Collection
 if (document.querySelector(".swiper-collection")) {
@@ -1408,111 +1408,111 @@ const handleItemModalQuickview = () => {
 
 
 
-// Modal SizeGuide
-const openModalSizeGuideBtn = document.querySelectorAll(".size-guide");
-const modalSizeGuide = document.querySelector(".modal-sizeguide-block");
-const modalSizeGuideMain = document.querySelector(
-  ".modal-sizeguide-block .modal-sizeguide-main"
-);
-const closeSizeGuideIcon = document.querySelector(
-  ".modal-sizeguide-main .close-btn"
-);
+// // Modal SizeGuide
+// const openModalSizeGuideBtn = document.querySelectorAll(".size-guide");
+// const modalSizeGuide = document.querySelector(".modal-sizeguide-block");
+// const modalSizeGuideMain = document.querySelector(
+//   ".modal-sizeguide-block .modal-sizeguide-main"
+// );
+// const closeSizeGuideIcon = document.querySelector(
+//   ".modal-sizeguide-main .close-btn"
+// );
 
-if (modalSizeGuide) {
-  const openModalSizeGuide = () => {
-    modalSizeGuideMain.classList.add("open");
-  };
+// if (modalSizeGuide) {
+//   const openModalSizeGuide = () => {
+//     modalSizeGuideMain.classList.add("open");
+//   };
 
-  const closeModalSizeGuide = () => {
-    modalSizeGuideMain.classList.remove("open");
-  };
+//   const closeModalSizeGuide = () => {
+//     modalSizeGuideMain.classList.remove("open");
+//   };
 
-  openModalSizeGuideBtn.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      openModalSizeGuide();
-    });
-  });
+//   openModalSizeGuideBtn.forEach((btn) => {
+//     btn.addEventListener("click", (e) => {
+//       e.stopPropagation();
+//       openModalSizeGuide();
+//     });
+//   });
 
-  modalSizeGuide.addEventListener("click", closeModalSizeGuide);
-  closeSizeGuideIcon.addEventListener("click", closeModalSizeGuide);
+//   modalSizeGuide.addEventListener("click", closeModalSizeGuide);
+//   closeSizeGuideIcon.addEventListener("click", closeModalSizeGuide);
 
-  modalSizeGuideMain.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
+//   modalSizeGuideMain.addEventListener("click", (e) => {
+//     e.stopPropagation();
+//   });
 
-  // Tow bar filter weight height
-  const rangeInputSizeguide = document.querySelectorAll(
-    ".modal-sizeguide-block .range-input input"
-  );
-  const progressHeight = document.querySelector(
-    ".filter-height .tow-bar-block .progress"
-  );
-  const progressWeight = document.querySelector(
-    ".filter-weight .tow-bar-block .progress"
-  );
-  const height = document.querySelector(".modal-sizeguide-block .height");
-  const weight = document.querySelector(".modal-sizeguide-block .weight");
+//   // Tow bar filter weight height
+//   const rangeInputSizeguide = document.querySelectorAll(
+//     ".modal-sizeguide-block .range-input input"
+//   );
+//   const progressHeight = document.querySelector(
+//     ".filter-height .tow-bar-block .progress"
+//   );
+//   const progressWeight = document.querySelector(
+//     ".filter-weight .tow-bar-block .progress"
+//   );
+//   const height = document.querySelector(".modal-sizeguide-block .height");
+//   const weight = document.querySelector(".modal-sizeguide-block .weight");
 
-  rangeInputSizeguide.forEach((input) => {
-    input.addEventListener("input", (e) => {
-      // set weight, height
-      let heightValue = parseInt(rangeInputSizeguide[0].value);
-      let weightValue = parseInt(rangeInputSizeguide[1].value);
+//   rangeInputSizeguide.forEach((input) => {
+//     input.addEventListener("input", (e) => {
+//       // set weight, height
+//       let heightValue = parseInt(rangeInputSizeguide[0].value);
+//       let weightValue = parseInt(rangeInputSizeguide[1].value);
 
-      height.innerHTML = heightValue;
-      weight.innerHTML = weightValue;
+//       height.innerHTML = heightValue;
+//       weight.innerHTML = weightValue;
 
-      progressHeight.style.right = 100 - (heightValue / 200) * 100 + "%";
-      progressWeight.style.right = 100 - (weightValue / 90) * 100 + "%";
+//       progressHeight.style.right = 100 - (heightValue / 200) * 100 + "%";
+//       progressWeight.style.right = 100 - (weightValue / 90) * 100 + "%";
 
-      // Change active weight, height
-      let sizeItems = document.querySelectorAll(
-        ".modal-sizeguide-block .list-size-block .size-item"
-      );
+//       // Change active weight, height
+//       let sizeItems = document.querySelectorAll(
+//         ".modal-sizeguide-block .list-size-block .size-item"
+//       );
 
-      sizeItems.forEach((size) => {
-        if (heightValue > 180 || weightValue > 70) {
-          if (size.innerHTML.replace(/\s+/g, "") === "2XL") {
-            size.classList.add("active");
-          } else {
-            size.classList.remove("active");
-          }
-        } else if (heightValue > 170 || weightValue > 60) {
-          if (size.innerHTML.replace(/\s+/g, "") === "XL") {
-            size.classList.add("active");
-          } else {
-            size.classList.remove("active");
-          }
-        } else if (heightValue > 160 || weightValue > 50) {
-          if (size.innerHTML.replace(/\s+/g, "") === "L") {
-            size.classList.add("active");
-          } else {
-            size.classList.remove("active");
-          }
-        } else if (heightValue > 155 || weightValue > 45) {
-          if (size.innerHTML.replace(/\s+/g, "") === "M") {
-            size.classList.add("active");
-          } else {
-            size.classList.remove("active");
-          }
-        } else if (heightValue > 150 || weightValue > 40) {
-          if (size.innerHTML.replace(/\s+/g, "") === "S") {
-            size.classList.add("active");
-          } else {
-            size.classList.remove("active");
-          }
-        } else {
-          if (size.innerHTML.replace(/\s+/g, "") === "XS") {
-            size.classList.add("active");
-          } else {
-            size.classList.remove("active");
-          }
-        }
-      });
-    });
-  });
-}
+//       sizeItems.forEach((size) => {
+//         if (heightValue > 180 || weightValue > 70) {
+//           if (size.innerHTML.replace(/\s+/g, "") === "2XL") {
+//             size.classList.add("active");
+//           } else {
+//             size.classList.remove("active");
+//           }
+//         } else if (heightValue > 170 || weightValue > 60) {
+//           if (size.innerHTML.replace(/\s+/g, "") === "XL") {
+//             size.classList.add("active");
+//           } else {
+//             size.classList.remove("active");
+//           }
+//         } else if (heightValue > 160 || weightValue > 50) {
+//           if (size.innerHTML.replace(/\s+/g, "") === "L") {
+//             size.classList.add("active");
+//           } else {
+//             size.classList.remove("active");
+//           }
+//         } else if (heightValue > 155 || weightValue > 45) {
+//           if (size.innerHTML.replace(/\s+/g, "") === "M") {
+//             size.classList.add("active");
+//           } else {
+//             size.classList.remove("active");
+//           }
+//         } else if (heightValue > 150 || weightValue > 40) {
+//           if (size.innerHTML.replace(/\s+/g, "") === "S") {
+//             size.classList.add("active");
+//           } else {
+//             size.classList.remove("active");
+//           }
+//         } else {
+//           if (size.innerHTML.replace(/\s+/g, "") === "XS") {
+//             size.classList.add("active");
+//           } else {
+//             size.classList.remove("active");
+//           }
+//         }
+//       });
+//     });
+//   });
+// }
 
 // Create product item
 const createProductItem = (product) => {
@@ -1538,44 +1538,13 @@ const createProductItem = (product) => {
     }">
             <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
                 ${productTags}
-                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                    <div
-                        class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                            Add To Wishlist</div>
-                        <i class="ph ph-heart text-lg"></i>
-                    </div>
-                    <div
-                        class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                            Compare Product</div>
-                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                    </div>
-                </div>
+                 
                 <div class="product-img w-full h-full aspect-[3/4]">
                     ${productImages}
                 </div>
-                ${product.sale ? (`
-                  <div class="countdown-time-block py-1.5 flex items-center justify-center">
-                    <div class="text-xs font-semibold uppercase text-red">
-                      <span class='countdown-day'>24</span>
-                      <span>D : </span>
-                      <span class='countdown-hour'>14</span>
-                      <span>H : </span>
-                      <span class='countdown-minute'>36</span>
-                      <span>M : </span>
-                      <span class='countdown-second'>51</span>
-                      <span>S</span>
-                    </div>
-                  </div>
-                `) : ''}
+               
                 <div class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5">
-                    <div
-                        class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                        <span class="max-lg:hidden">Quick View</span>
-                        <i class="ph ph-eye lg:hidden text-xl"></i>
-                        </div>
+                   
                         ${product.action === "add to cart"
       ? `
                             <div
@@ -1585,31 +1554,11 @@ const createProductItem = (product) => {
                                 <i class="ph ph-shopping-bag-open lg:hidden text-xl"></i>
                             </div>
                         `
-      : `
-                            <div
-                                class="quick-shop-btn text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white max-lg:hidden">
-                                Quick Shop</div>
-                            <div
-                                class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white lg:hidden"
-                                >
-                                <span class="max-lg:hidden">Add To Cart</span>
-                                <i class="ph ph-shopping-bag-open lg:hidden text-xl"></i>
-                            </div>
-                            <div class="quick-shop-block absolute left-5 right-5 bg-white p-5 rounded-[20px]">
-                                <div class="list-size flex items-center justify-center flex-wrap gap-2">
-                                    ${product.sizes &&
-      product.sizes
-        .map(
-          (size, index) =>
-            `<div key="${index}" class="size-item w-10 h-10 rounded-full flex items-center justify-center text-button bg-white border border-line">${size.trim()}</div>`
-        )
-        .join("")
-      }
-                                </div >
-    <div class="add-cart-btn button-main w-full text-center rounded-full py-3 mt-4">Add
-        To cart</div>
-                            </div >
-    `
+      : ` <div
+                        class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
+                        <span class="max-lg:hidden">Add To Cart</span>
+                        <i class="ph ph-eye lg:hidden text-xl"></i>
+                        </div>`
     }
                 </div>
             </div>
@@ -1637,47 +1586,7 @@ const createProductItem = (product) => {
                 </div>
                 <div class="product-name text-title duration-300">${product.name
     }</div>
-                ${product.variation.length > 0 &&
-      product.action === "add to cart"
-      ? `
-                        <div class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                            ${product.variation
-        .map(
-          (item, index) =>
-            `<div
-                                    key="${index}"
-                                    class="color-item w-8 h-8 rounded-full duration-300 relative"
-                                    style="background-color:${item.colorCode};"
-                                >
-                                    <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">${item.color}</div>
-                                </div>
-                                `
-        )
-        .join("")}
-                        </div>`
-      : `
-                    <div class="list-color list-color-image max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                        ${product.variation
-        .map(
-          (item, index) =>
-            `
-                            <div
-                                class="color-item w-12 h-12 rounded-xl duration-300 relative"
-                                key="${index}"
-                            >
-                                <img
-                                    src="${item.colorImage}"
-                                    alt='color'
-                                    class='rounded-xl w-full h-full object-cover'
-                                />
-                                <div class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">${item.color}</div>
-                            </div>
-                        `
-        )
-        .join("")}
-                    </div>
-                `
-    }
+             
         <div
         class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
         <div class="product-price text-title">$${product.price}.00</div>
@@ -1723,131 +1632,131 @@ function addEventToProductItem(products) {
       const quickshopIcon = product.querySelector(".quick-shop-btn");
       const modalQuickshop = product.querySelector(".quick-shop-block");
 
-      if (addWishlistIcon) {
-        let wishlistStore = localStorage.getItem("wishlistStore");
-        wishlistStore = wishlistStore ? JSON.parse(wishlistStore) : [];
-        wishlistStore.forEach((prd) => {
-          if (prd.id === productId) {
-            addWishlistIcon.classList.add("active");
-            addWishlistIcon.querySelector("i").classList.remove("ph");
-            addWishlistIcon.querySelector("i").classList.add("ph-fill");
-          }
-        });
+      // if (addWishlistIcon) {
+      //   let wishlistStore = localStorage.getItem("wishlistStore");
+      //   wishlistStore = wishlistStore ? JSON.parse(wishlistStore) : [];
+      //   wishlistStore.forEach((prd) => {
+      //     if (prd.id === productId) {
+      //       addWishlistIcon.classList.add("active");
+      //       addWishlistIcon.querySelector("i").classList.remove("ph");
+      //       addWishlistIcon.querySelector("i").classList.add("ph-fill");
+      //     }
+      //   });
 
-        addWishlistIcon.addEventListener("click", (e) => {
-          e.stopPropagation();
+      //   addWishlistIcon.addEventListener("click", (e) => {
+      //     e.stopPropagation();
 
-          // save prd to wishlist in local storage
-          const productId = addWishlistIcon
-            .closest(".product-item")
-            .getAttribute("data-item");
-          let wishlistStore = localStorage.getItem("wishlistStore");
-          wishlistStore = wishlistStore ? JSON.parse(wishlistStore) : [];
+      //     // save prd to wishlist in local storage
+      //     const productId = addWishlistIcon
+      //       .closest(".product-item")
+      //       .getAttribute("data-item");
+      //     let wishlistStore = localStorage.getItem("wishlistStore");
+      //     wishlistStore = wishlistStore ? JSON.parse(wishlistStore) : [];
 
-          const existingIndex = wishlistStore.findIndex(
-            (item) => item.id === productId
-          );
+      //     const existingIndex = wishlistStore.findIndex(
+      //       (item) => item.id === productId
+      //     );
 
-          if (existingIndex > -1) {
-            // If prd existed in wishlist, remove it from wishlist
-            wishlistStore.splice(existingIndex, 1);
-            addWishlistIcon.classList.remove("active");
-            addWishlistIcon.querySelector("i").classList.add("ph");
-            addWishlistIcon.querySelector("i").classList.remove("ph-fill");
-          } else {
-            // If prd not exist in wishlist, add it to wishlist
-            const productToAdd = products?.find((item) => item.id === productId);
-            if (productToAdd) {
-              wishlistStore.push(productToAdd);
-              addWishlistIcon.classList.add("active");
-              addWishlistIcon.querySelector("i").classList.remove("ph");
-              addWishlistIcon.querySelector("i").classList.add("ph-fill");
-              openModalWishlist();
-            }
-          }
+      //     if (existingIndex > -1) {
+      //       // If prd existed in wishlist, remove it from wishlist
+      //       wishlistStore.splice(existingIndex, 1);
+      //       addWishlistIcon.classList.remove("active");
+      //       addWishlistIcon.querySelector("i").classList.add("ph");
+      //       addWishlistIcon.querySelector("i").classList.remove("ph-fill");
+      //     } else {
+      //       // If prd not exist in wishlist, add it to wishlist
+      //       const productToAdd = products?.find((item) => item.id === productId);
+      //       if (productToAdd) {
+      //         wishlistStore.push(productToAdd);
+      //         addWishlistIcon.classList.add("active");
+      //         addWishlistIcon.querySelector("i").classList.remove("ph");
+      //         addWishlistIcon.querySelector("i").classList.add("ph-fill");
+      //         openModalWishlist();
+      //       }
+      //     }
 
-          // Save wishlist to localStorage
-          localStorage.setItem("wishlistStore", JSON.stringify(wishlistStore));
-          handleItemModalWishlist();
-        });
-      }
+      //     // Save wishlist to localStorage
+      //     localStorage.setItem("wishlistStore", JSON.stringify(wishlistStore));
+      //     handleItemModalWishlist();
+      //   });
+      // }
 
-      if (compareIcon) {
-        let compareStore = localStorage.getItem("compareStore");
-        compareStore = compareStore ? JSON.parse(compareStore) : [];
-        compareStore.forEach((prd) => {
-          if (prd.id === productId) {
-            compareIcon.classList.add("active");
-          } else {
-            compareIcon.classList.remove("active");
-          }
-        });
+      // if (compareIcon) {
+      //   let compareStore = localStorage.getItem("compareStore");
+      //   compareStore = compareStore ? JSON.parse(compareStore) : [];
+      //   compareStore.forEach((prd) => {
+      //     if (prd.id === productId) {
+      //       compareIcon.classList.add("active");
+      //     } else {
+      //       compareIcon.classList.remove("active");
+      //     }
+      //   });
 
-        compareIcon.addEventListener("click", (e) => {
-          e.stopPropagation();
+      //   compareIcon.addEventListener("click", (e) => {
+      //     e.stopPropagation();
 
-          // save prd to compare in local storage
-          const productId = compareIcon
-            .closest(".product-item")
-            .getAttribute("data-item");
-          let compareStore = localStorage.getItem("compareStore");
-          compareStore = compareStore ? JSON.parse(compareStore) : [];
+      //     // save prd to compare in local storage
+      //     const productId = compareIcon
+      //       .closest(".product-item")
+      //       .getAttribute("data-item");
+      //     let compareStore = localStorage.getItem("compareStore");
+      //     compareStore = compareStore ? JSON.parse(compareStore) : [];
 
-          const existingIndex = compareStore.findIndex(
-            (item) => item.id === productId
-          );
+      //     const existingIndex = compareStore.findIndex(
+      //       (item) => item.id === productId
+      //     );
 
-          if (existingIndex > -1) {
-            // If prd existed in compare, remove it from compare
-            compareStore.splice(existingIndex, 1);
-            compareIcon.classList.remove("active");
-          } else {
-            if (compareStore.length < 3) {
-              // If prd not exist in compare, add it to compare
-              const productToAdd = products?.find(
-                (item) => item.id === productId
-              );
-              if (productToAdd) {
-                compareStore.push(productToAdd);
-                compareIcon.classList.add("active");
-              }
-            } else {
-              alert("List compare product must be <= 3");
-            }
-          }
+      //     if (existingIndex > -1) {
+      //       // If prd existed in compare, remove it from compare
+      //       compareStore.splice(existingIndex, 1);
+      //       compareIcon.classList.remove("active");
+      //     } else {
+      //       if (compareStore.length < 3) {
+      //         // If prd not exist in compare, add it to compare
+      //         const productToAdd = products?.find(
+      //           (item) => item.id === productId
+      //         );
+      //         if (productToAdd) {
+      //           compareStore.push(productToAdd);
+      //           compareIcon.classList.add("active");
+      //         }
+      //       } else {
+      //         alert("List compare product must be <= 3");
+      //       }
+      //     }
 
-          // Save compare to localStorage
-          localStorage.setItem("compareStore", JSON.stringify(compareStore));
-          handleItemModalCompare();
-          openModalCompare();
-        });
-      }
+      //     // Save compare to localStorage
+      //     localStorage.setItem("compareStore", JSON.stringify(compareStore));
+      //     handleItemModalCompare();
+      //     openModalCompare();
+      //   });
+      // }
 
-      if (quickviewIcon) {
-        quickviewIcon.addEventListener("click", (e) => {
-          e.stopPropagation();
-          // save prd to quick view in local storage
-          const productItem = quickviewIcon.closest(".product-item");
-          const productId = productItem.getAttribute("data-item");
-          let quickViewStore = localStorage.getItem("quickViewStore");
-          quickViewStore = quickViewStore && [];
+      // if (quickviewIcon) {
+      //   quickviewIcon.addEventListener("click", (e) => {
+      //     e.stopPropagation();
+      //     // save prd to quick view in local storage
+      //     const productItem = quickviewIcon.closest(".product-item");
+      //     const productId = productItem.getAttribute("data-item");
+      //     let quickViewStore = localStorage.getItem("quickViewStore");
+      //     quickViewStore = quickViewStore && [];
 
-          // add it to quick view
-          const productToAdd = products?.find((item) => item.id === productId);
-          if (productToAdd) {
-            quickViewStore.push(productToAdd);
-          }
+      //     // add it to quick view
+      //     const productToAdd = products?.find((item) => item.id === productId);
+      //     if (productToAdd) {
+      //       quickViewStore.push(productToAdd);
+      //     }
 
-          // Save quickView to localStorage
-          localStorage.setItem(
-            "quickViewStore",
-            JSON.stringify(quickViewStore)
-          );
-          handleItemModalQuickview();
-          closeModalCart()
-          openModalQuickview();
-        });
-      }
+      //     // Save quickView to localStorage
+      //     localStorage.setItem(
+      //       "quickViewStore",
+      //       JSON.stringify(quickViewStore)
+      //     );
+      //     handleItemModalQuickview();
+      //     closeModalCart()
+      //     openModalQuickview();
+      //   });
+      // }
 
       if (addCartIcon) {
         addCartIcon.addEventListener("click", (e) => {
@@ -1880,96 +1789,96 @@ function addEventToProductItem(products) {
         });
       }
 
-      if (quickshopIcon) {
-        quickshopIcon.addEventListener("click", (e) => {
-          e.stopPropagation();
-          modalQuickshop.classList.add("open");
-        });
+      // if (quickshopIcon) {
+      //   quickshopIcon.addEventListener("click", (e) => {
+      //     e.stopPropagation();
+      //     modalQuickshop.classList.add("open");
+      //   });
 
-        if (addCartIcon) {
-          addCartIcon.addEventListener("click", (e) => {
-            e.stopPropagation();
-            if (modalQuickshop.classList.contains("open")) {
-              modalQuickshop.classList.remove("open");
-            }
-            openModalCart();
-          });
-        }
-      }
+      //   if (addCartIcon) {
+      //     addCartIcon.addEventListener("click", (e) => {
+      //       e.stopPropagation();
+      //       if (modalQuickshop.classList.contains("open")) {
+      //         modalQuickshop.classList.remove("open");
+      //       }
+      //       openModalCart();
+      //     });
+      //   }
+      // }
     });
   }
 
-  handleActiveSizeChange()
-  handleActiveColorChange()
+  // handleActiveSizeChange()
+  // handleActiveColorChange()
 }
 
 
-// Active size
-const handleActiveSizeChange = () => {
-  // List size
-  const listSizes = document.querySelectorAll(".list-size");
+// // Active size
+// const handleActiveSizeChange = () => {
+//   // List size
+//   const listSizes = document.querySelectorAll(".list-size");
 
-  listSizes.forEach((list) => {
-    const sizeItems = list.querySelectorAll(".size-item");
+//   listSizes.forEach((list) => {
+//     const sizeItems = list.querySelectorAll(".size-item");
 
-    sizeItems.forEach((size) => {
-      size.addEventListener("click", () => {
-        let parent = size.parentElement;
-        if (!parent.querySelector(".active")) {
-          size.classList.add("active");
-        } else {
-          parent.querySelector(".active").classList.remove("active");
-          size.classList.add("active");
-        }
-      });
-    });
+//     sizeItems.forEach((size) => {
+//       size.addEventListener("click", () => {
+//         let parent = size.parentElement;
+//         if (!parent.querySelector(".active")) {
+//           size.classList.add("active");
+//         } else {
+//           parent.querySelector(".active").classList.remove("active");
+//           size.classList.add("active");
+//         }
+//       });
+//     });
 
-    list.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const chooseSizeBlock = list.parentElement;
-      const sizeSelected = chooseSizeBlock.querySelector(".size");
-      const activeSize = list.querySelector(".size-item.active");
+//     list.addEventListener("click", (e) => {
+//       e.stopPropagation();
+//       const chooseSizeBlock = list.parentElement;
+//       const sizeSelected = chooseSizeBlock.querySelector(".size");
+//       const activeSize = list.querySelector(".size-item.active");
 
-      if (sizeSelected && activeSize) {
-        sizeSelected.textContent = activeSize.textContent;
-      }
-    });
-  });
-}
+//       if (sizeSelected && activeSize) {
+//         sizeSelected.textContent = activeSize.textContent;
+//       }
+//     });
+//   });
+// }
 
 
-// Active size
-const handleActiveColorChange = () => {
-  // List color
-  const listColors = document.querySelectorAll(".list-color");
+// // Active size
+// const handleActiveColorChange = () => {
+//   // List color
+//   const listColors = document.querySelectorAll(".list-color");
 
-  listColors.forEach((list) => {
-    const colorItems = list.querySelectorAll(".color-item");
+//   listColors.forEach((list) => {
+//     const colorItems = list.querySelectorAll(".color-item");
 
-    colorItems.forEach((color) => {
-      color.addEventListener("click", () => {
-        let parent = color.parentElement;
-        if (!parent.querySelector(".active")) {
-          color.classList.add("active");
-        } else {
-          parent.querySelector(".active").classList.remove("active");
-          color.classList.add("active");
-        }
-      });
-    });
+//     colorItems.forEach((color) => {
+//       color.addEventListener("click", () => {
+//         let parent = color.parentElement;
+//         if (!parent.querySelector(".active")) {
+//           color.classList.add("active");
+//         } else {
+//           parent.querySelector(".active").classList.remove("active");
+//           color.classList.add("active");
+//         }
+//       });
+//     });
 
-    list.addEventListener("click", (e) => {
-      e.stopPropagation();
-      const chooseColorBlock = list.parentElement;
-      const colorSelected = chooseColorBlock.querySelector(".color");
-      const activeColor = list.querySelector(".color-item.active .tag-action");
+//     list.addEventListener("click", (e) => {
+//       e.stopPropagation();
+//       const chooseColorBlock = list.parentElement;
+//       const colorSelected = chooseColorBlock.querySelector(".color");
+//       const activeColor = list.querySelector(".color-item.active .tag-action");
 
-      if (colorSelected && activeColor) {
-        colorSelected.textContent = activeColor.textContent;
-      }
-    });
-  });
-}
+//       if (colorSelected && activeColor) {
+//         colorSelected.textContent = activeColor.textContent;
+//       }
+//     });
+//   });
+// }
 
 
 // filter product img in home6, product detail
@@ -1988,10 +1897,10 @@ if (filterProductImg) {
           const selectedColor = colorItem.querySelector('.tag-action').textContent.trim()
           const selectedVariation = productMain.variation.find(variation => variation.color === selectedColor);
           const selectedImage = selectedVariation.image;
-          
+
           const swiperSlides = filterProductImg.querySelectorAll('.swiper-slide');
           let targetIndex = -1;
-          
+
           swiperSlides.forEach((slide, index) => {
             const imgSrc = slide.querySelector('img').getAttribute('src');
             if (imgSrc === selectedImage) {
@@ -2695,7 +2604,7 @@ const handleSlideActive = () => {
     });
   }
 };
-
+swiper-button
 handleSlideActive();
 
 // list-testimonial 4
@@ -2718,175 +2627,175 @@ var swiperListTestimonialFour = new Swiper(".swiper-testimonial-four", {
 });
 
 // list-testimonial yoga
-if (document.querySelector(".list-testimonial-yoga")) {
-  $(".list-testimonial-yoga").slick({
-    dots: false,
-    arrows: false,
-    infinite: true,
-    centerMode: true,
-    centerPadding: "220px",
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    touchThreshold: 100,
-    swipe: true,
-    swipeToSlide: true,
-    draggable: true,
-    useTransform: false,
-    responsive: [
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          centerPadding: "120px",
-        },
-      },
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          centerPadding: "160px",
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "160px",
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "16px",
-        },
-      },
-    ],
-  });
-}
+// if (document.querySelector(".list-testimonial-yoga")) {
+//   $(".list-testimonial-yoga").slick({
+//     dots: false,
+//     arrows: false,
+//     infinite: true,
+//     centerMode: true,
+//     centerPadding: "220px",
+//     speed: 300,
+//     autoplay: true,
+//     autoplaySpeed: 5000,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     touchThreshold: 100,
+//     swipe: true,
+//     swipeToSlide: true,
+//     draggable: true,
+//     useTransform: false,
+//     responsive: [
+//       {
+//         breakpoint: 1600,
+//         settings: {
+//           slidesToShow: 3,
+//           slidesToScroll: 3,
+//           centerPadding: "120px",
+//         },
+//       },
+//       {
+//         breakpoint: 1400,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 2,
+//           centerPadding: "160px",
+//         },
+//       },
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           centerPadding: "160px",
+//         },
+//       },
+//       {
+//         breakpoint: 640,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//           centerPadding: "16px",
+//         },
+//       },
+//     ],
+//   });
+// }
 
 // list-instagram
-var swiperListInstagram = new Swiper(".swiper-list-instagram", {
-  pagination: { clickable: true, el: ".swiper-pagination" },
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  slidesPerView: 2,
-  spaceBetween: 12,
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 16,
-    },
-    1280: {
-      slidesPerView: 5,
-      spaceBetween: 16,
-    },
-  },
-});
+// var swiperListInstagram = new Swiper(".swiper-list-instagram", {
+//   pagination: { clickable: true, el: ".swiper-pagination" },
+//   loop: true,
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+//   slidesPerView: 2,
+//   spaceBetween: 12,
+//   breakpoints: {
+//     640: {
+//       slidesPerView: 3,
+//       spaceBetween: 12,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//       spaceBetween: 16,
+//     },
+//     1024: {
+//       slidesPerView: 4,
+//       spaceBetween: 16,
+//     },
+//     1280: {
+//       slidesPerView: 5,
+//       spaceBetween: 16,
+//     },
+//   },
+// });
 
 // list-instagram 3
-var swiperListInstagram = new Swiper(".swiper-instagram-three", {
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  clickable: true,
-  slidesPerView: 2,
-  spaceBetween: 0,
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-    },
-    768: {
-      slidesPerView: 4,
-    },
-    1024: {
-      slidesPerView: 5,
-    },
-    1280: {
-      slidesPerView: 6,
-    },
-  },
-});
+// var swiperListInstagram = new Swiper(".swiper-instagram-three", {
+//   loop: true,
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+//   clickable: true,
+//   slidesPerView: 2,
+//   spaceBetween: 0,
+//   breakpoints: {
+//     640: {
+//       slidesPerView: 3,
+//     },
+//     768: {
+//       slidesPerView: 4,
+//     },
+//     1024: {
+//       slidesPerView: 5,
+//     },
+//     1280: {
+//       slidesPerView: 6,
+//     },
+//   },
+// });
 
 // list-brand
-var swiperListBrand = new Swiper(".swiper-list-brand", {
-  pagination: { clickable: true, el: ".swiper-pagination" },
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  slidesPerView: 2,
-  spaceBetween: 12,
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 16,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 16,
-    },
-    1280: {
-      slidesPerView: 6,
-      spaceBetween: 16,
-    },
-  },
-});
+// var swiperListBrand = new Swiper(".swiper-list-brand", {
+//   pagination: { clickable: true, el: ".swiper-pagination" },
+//   loop: true,
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+//   slidesPerView: 2,
+//   spaceBetween: 12,
+//   breakpoints: {
+//     640: {
+//       slidesPerView: 3,
+//       spaceBetween: 12,
+//     },
+//     768: {
+//       slidesPerView: 4,
+//       spaceBetween: 16,
+//     },
+//     1024: {
+//       slidesPerView: 5,
+//       spaceBetween: 16,
+//     },
+//     1280: {
+//       slidesPerView: 6,
+//       spaceBetween: 16,
+//     },
+//   },
+// });
 
 // list-five-brand
-var swiperListBrand = new Swiper(".swiper-list-five-brand", {
-  pagination: { clickable: true, el: ".swiper-pagination" },
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  slidesPerView: 2,
-  spaceBetween: 12,
-  breakpoints: {
-    640: {
-      slidesPerView: 3,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 16,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 16,
-    },
-    1280: {
-      slidesPerView: 5,
-      spaceBetween: 16,
-    },
-  },
-});
+// var swiperListBrand = new Swiper(".swiper-list-five-brand", {
+//   pagination: { clickable: true, el: ".swiper-pagination" },
+//   loop: true,
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+//   slidesPerView: 2,
+//   spaceBetween: 12,
+//   breakpoints: {
+//     640: {
+//       slidesPerView: 3,
+//       spaceBetween: 12,
+//     },
+//     768: {
+//       slidesPerView: 3,
+//       spaceBetween: 16,
+//     },
+//     1024: {
+//       slidesPerView: 4,
+//       spaceBetween: 16,
+//     },
+//     1280: {
+//       slidesPerView: 5,
+//       spaceBetween: 16,
+//     },
+//   },
+// });
 
 
 // Before After Cosmetic1
@@ -2974,39 +2883,39 @@ if (categoryItems) {
   });
 }
 
-// Modal Video
-const playIcons = document.querySelectorAll(".btn-play");
-const modalVideo = document.querySelector(".modal-video-block");
-const modalVideoMain = document.querySelector(
-  ".modal-video-block .modal-video-main"
-);
+// // Modal Video
+// const playIcons = document.querySelectorAll(".btn-play");
+// const modalVideo = document.querySelector(".modal-video-block");
+// const modalVideoMain = document.querySelector(
+//   ".modal-video-block .modal-video-main"
+// );
 
-if (playIcons && modalVideo) {
-  playIcons.forEach((playIcon) => {
-    playIcon.addEventListener("click", () => {
-      modalVideoMain.classList.add("open");
-    });
-  });
+// if (playIcons && modalVideo) {
+//   playIcons.forEach((playIcon) => {
+//     playIcon.addEventListener("click", () => {
+//       modalVideoMain.classList.add("open");
+//     });
+//   });
 
-  modalVideo.addEventListener("click", () => {
-    modalVideoMain.classList.remove("open");
-  });
+//   modalVideo.addEventListener("click", () => {
+//     modalVideoMain.classList.remove("open");
+//   });
 
-  modalVideoMain.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-}
+//   modalVideoMain.addEventListener("click", (e) => {
+//     e.stopPropagation();
+//   });
+// }
 
 // Scroll to top
-const scrollTopBtn = document.querySelector(".scroll-to-top-btn");
+// const scrollTopBtn = document.querySelector(".scroll-to-top-btn");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 600) {
-    scrollTopBtn.classList.add("active");
-  } else {
-    scrollTopBtn.classList.remove("active");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 600) {
+//     scrollTopBtn.classList.add("active");
+//   } else {
+//     scrollTopBtn.classList.remove("active");
+//   }
+// });
 
 // Handle layout cols in list product wishlist page, shop
 const layoutProductList = document.querySelector(
@@ -3051,222 +2960,222 @@ if (layoutProductList && chooseLayoutItems) {
 }
 
 // Display wishlist, cart, compare item from localStorage
-const listProductWishlist = document.querySelector(
-  ".wishlist-block .list-product"
-);
+// const listProductWishlist = document.querySelector(
+//   ".wishlist-block .list-product"
+// );
 const cartPage = document.querySelector(".cart-block");
 const checkoutPage = document.querySelector(".checkout-block");
 const listProductCheckout = document.querySelector(
   ".checkout-block .list-product-checkout"
 );
-const listProductCompare = document.querySelector(
-  ".compare-block .content-main"
-);
+// const listProductCompare = document.querySelector(
+//   ".compare-block .content-main"
+// );
 
 // Wishlist
-if (listProductWishlist) {
-  let wishlistStore = localStorage.getItem("wishlistStore");
-  wishlistStore = wishlistStore ? JSON.parse(wishlistStore) : [];
+// if (listProductWishlist) {
+//   let wishlistStore = localStorage.getItem("wishlistStore");
+//   wishlistStore = wishlistStore ? JSON.parse(wishlistStore) : [];
 
-  wishlistStore.forEach((product) => {
-    const productElement = createProductItem(product);
-    listProductWishlist.appendChild(productElement);
-  });
-}
+//   wishlistStore.forEach((product) => {
+//     const productElement = createProductItem(product);
+//     listProductWishlist.appendChild(productElement);
+//   });
+// }
 
 // Compare page
-if (listProductCompare) {
-  let compareStore = localStorage.getItem("compareStore");
-  compareStore = compareStore ? JSON.parse(compareStore) : [];
+// if (listProductCompare) {
+//   let compareStore = localStorage.getItem("compareStore");
+//   compareStore = compareStore ? JSON.parse(compareStore) : [];
 
-  const listImg = listProductCompare.querySelector(".list-product .right");
-  const listRate = listProductCompare.querySelector(".list-rate-block");
-  const listPrice = listProductCompare.querySelector(".list-price-block");
-  const listType = listProductCompare.querySelector(".list-type-block");
-  const listBrand = listProductCompare.querySelector(".list-brand-block");
-  const listSize = listProductCompare.querySelector(".list-size-block");
-  const listColor = listProductCompare.querySelector(".list-color-block");
+//   const listImg = listProductCompare.querySelector(".list-product .right");
+//   const listRate = listProductCompare.querySelector(".list-rate-block");
+//   const listPrice = listProductCompare.querySelector(".list-price-block");
+//   const listType = listProductCompare.querySelector(".list-type-block");
+//   const listBrand = listProductCompare.querySelector(".list-brand-block");
+//   const listSize = listProductCompare.querySelector(".list-size-block");
+//   const listColor = listProductCompare.querySelector(".list-color-block");
 
-  if (compareStore.length === 0) {
-    listProductCompare.innerHTML = `
-        <div class="flex items-center justify-between w-full">
-        <div>
-        <div class="text-title">No product in compare</div>
-        </div>
-        </div>
-        `;
-  } else {
-    compareStore.forEach((product) => {
-      // list img
-      const productElement = document.createElement("div");
-      productElement.setAttribute("data-item", product.id);
-      productElement.classList.add(
-        "product-item",
-        "px-10",
-        "pt-6",
-        "pb-5",
-        "border-r",
-        "border-line",
-        "cursor-pointer"
-      );
-      productElement.innerHTML = `
-                <div class="bg-img w-full aspect-[3/4] rounded-lg overflow-hidden flex-shrink-0">
-                    <img src=${product.thumbImage[0]} alt='img' class='w-full h-full object-cover' />
-                </div>
-                <div class="text-title text-center mt-4">${product.name}</div>
-                <div class="caption2 font-semibold text-secondary2 uppercase text-center mt-1">
-                    ${product.brand}
-                </div>
-                `;
+//   if (compareStore.length === 0) {
+//     listProductCompare.innerHTML = `
+//         <div class="flex items-center justify-between w-full">
+//         <div>
+//         <div class="text-title">No product in compare</div>
+//         </div>
+//         </div>
+//         `;
+//   } else {
+//     compareStore.forEach((product) => {
+//       // list img
+//       const productElement = document.createElement("div");
+//       productElement.setAttribute("data-item", product.id);
+//       productElement.classList.add(
+//         "product-item",
+//         "px-10",
+//         "pt-6",
+//         "pb-5",
+//         "border-r",
+//         "border-line",
+//         "cursor-pointer"
+//       );
+//       productElement.innerHTML = `
+//                 <div class="bg-img w-full aspect-[3/4] rounded-lg overflow-hidden flex-shrink-0">
+//                     <img src=${product.thumbImage[0]} alt='img' class='w-full h-full object-cover' />
+//                 </div>
+//                 <div class="text-title text-center mt-4">${product.name}</div>
+//                 <div class="caption2 font-semibold text-secondary2 uppercase text-center mt-1">
+//                     ${product.brand}
+//                 </div>
+//                 `;
 
-      listImg.appendChild(productElement);
+//       listImg.appendChild(productElement);
 
-      // list star
-      let arrOfStar = "";
-      const rateElement = document.createElement("td");
-      rateElement.classList.add(
-        "w-full",
-        "border",
-        "border-line",
-        "h-[60px]",
-        "border-t-0",
-        "border-r-0"
-      );
-      for (let i = 0; i < 5; i++) {
-        if (product.rate) {
-          if (i >= product.rate) {
-            arrOfStar +=
-              '<i class="ph-fill ph-star text-sm text-secondary"></i>';
-          } else {
-            arrOfStar += '<i class="ph-fill ph-star text-sm text-yellow"></i>';
-          }
-        }
-      }
+//       // list star
+//       let arrOfStar = "";
+//       const rateElement = document.createElement("td");
+//       rateElement.classList.add(
+//         "w-full",
+//         "border",
+//         "border-line",
+//         "h-[60px]",
+//         "border-t-0",
+//         "border-r-0"
+//       );
+//       for (let i = 0; i < 5; i++) {
+//         if (product.rate) {
+//           if (i >= product.rate) {
+//             arrOfStar +=
+//               '<i class="ph-fill ph-star text-sm text-secondary"></i>';
+//           } else {
+//             arrOfStar += '<i class="ph-fill ph-star text-sm text-yellow"></i>';
+//           }
+//         }
+//       }
 
-      rateElement.innerHTML = `
-                <div class='h-full flex items-center justify-center'>
-                    <div class="rate flex">
-                        ${arrOfStar}
-                    </div>
-                    <p class='pl-1'>(1.234)</p>
-                </div>
-            `;
+//       rateElement.innerHTML = `
+//                 <div class='h-full flex items-center justify-center'>
+//                     <div class="rate flex">
+//                         ${arrOfStar}
+//                     </div>
+//                     <p class='pl-1'>(1.234)</p>
+//                 </div>
+//             `;
 
-      listRate.appendChild(rateElement);
+//       listRate.appendChild(rateElement);
 
-      // list price
-      const priceElement = document.createElement("td");
-      priceElement.classList.add(
-        "w-full",
-        "border",
-        "border-line",
-        "h-[60px]",
-        "border-t-0",
-        "border-r-0"
-      );
-      priceElement.innerHTML = `
-                <div class='price-item h-full flex items-center justify-center'>
-                    $${product.price}.00
-                </div>
-            `;
+//       // list price
+//       const priceElement = document.createElement("td");
+//       priceElement.classList.add(
+//         "w-full",
+//         "border",
+//         "border-line",
+//         "h-[60px]",
+//         "border-t-0",
+//         "border-r-0"
+//       );
+//       priceElement.innerHTML = `
+//                 <div class='price-item h-full flex items-center justify-center'>
+//                     $${product.price}.00
+//                 </div>
+//             `;
 
-      listPrice.appendChild(priceElement);
+//       listPrice.appendChild(priceElement);
 
-      // list type
-      const typeElement = document.createElement("td");
-      typeElement.classList.add(
-        "w-full",
-        "border",
-        "border-line",
-        "h-[60px]",
-        "border-t-0",
-        "border-r-0"
-      );
-      typeElement.innerHTML = `
-                <div class='type-item h-full flex items-center justify-center capitalize'>
-                    ${product.type}
-                </div>
-            `;
+//       // list type
+//       const typeElement = document.createElement("td");
+//       typeElement.classList.add(
+//         "w-full",
+//         "border",
+//         "border-line",
+//         "h-[60px]",
+//         "border-t-0",
+//         "border-r-0"
+//       );
+//       typeElement.innerHTML = `
+//                 <div class='type-item h-full flex items-center justify-center capitalize'>
+//                     ${product.type}
+//                 </div>
+//             `;
 
-      listType.appendChild(typeElement);
+//       listType.appendChild(typeElement);
 
-      // list brand
-      const brandElement = document.createElement("td");
-      brandElement.classList.add(
-        "w-full",
-        "border",
-        "border-line",
-        "h-[60px]",
-        "border-t-0",
-        "border-r-0"
-      );
-      brandElement.innerHTML = `
-                <div class='brand-item h-full flex items-center justify-center capitalize'>
-                    ${product.brand}
-                </div>
-            `;
+//       // list brand
+//       const brandElement = document.createElement("td");
+//       brandElement.classList.add(
+//         "w-full",
+//         "border",
+//         "border-line",
+//         "h-[60px]",
+//         "border-t-0",
+//         "border-r-0"
+//       );
+//       brandElement.innerHTML = `
+//                 <div class='brand-item h-full flex items-center justify-center capitalize'>
+//                     ${product.brand}
+//                 </div>
+//             `;
 
-      listBrand.appendChild(brandElement);
+//       listBrand.appendChild(brandElement);
 
-      // list size
-      const sizeElement = document.createElement("td");
-      sizeElement.classList.add(
-        "w-full",
-        "border",
-        "border-line",
-        "h-[60px]",
-        "border-t-0",
-        "border-r-0"
-      );
-      let size = "";
+//       // list size
+//       const sizeElement = document.createElement("td");
+//       sizeElement.classList.add(
+//         "w-full",
+//         "border",
+//         "border-line",
+//         "h-[60px]",
+//         "border-t-0",
+//         "border-r-0"
+//       );
+//       let size = "";
 
-      if (product.sizes) {
-        product.sizes.forEach((item, index) => {
-          // if last size, don't add ',' in the end
-          if (index === product.sizes.length - 1) {
-            size += `<p>${item}</p>`;
-          } else {
-            size += `<p>${item}, </p>`;
-          }
-        });
-      }
+//       if (product.sizes) {
+//         product.sizes.forEach((item, index) => {
+//           // if last size, don't add ',' in the end
+//           if (index === product.sizes.length - 1) {
+//             size += `<p>${item}</p>`;
+//           } else {
+//             size += `<p>${item}, </p>`;
+//           }
+//         });
+//       }
 
-      sizeElement.innerHTML = `
-                <div class='list-size h-full flex items-center justify-center capitalize gap-1'>
-                    ${size}
-                </div>
-            `;
+//       sizeElement.innerHTML = `
+//                 <div class='list-size h-full flex items-center justify-center capitalize gap-1'>
+//                     ${size}
+//                 </div>
+//             `;
 
-      listSize.appendChild(sizeElement);
+//       listSize.appendChild(sizeElement);
 
-      // list color
-      const colorElement = document.createElement("td");
-      colorElement.classList.add(
-        "w-full",
-        "border",
-        "border-line",
-        "h-[60px]",
-        "border-t-0",
-        "border-r-0"
-      );
-      let color = "";
+//       // list color
+//       const colorElement = document.createElement("td");
+//       colorElement.classList.add(
+//         "w-full",
+//         "border",
+//         "border-line",
+//         "h-[60px]",
+//         "border-t-0",
+//         "border-r-0"
+//       );
+//       let color = "";
 
-      if (product.variation) {
-        product.variation.forEach((item) => {
-          color += `<span class='w-6 h-6 rounded-full' style="background-color: ${item.colorCode};"></span>`;
-        });
-      }
+//       if (product.variation) {
+//         product.variation.forEach((item) => {
+//           color += `<span class='w-6 h-6 rounded-full' style="background-color: ${item.colorCode};"></span>`;
+//         });
+//       }
 
-      colorElement.innerHTML = `
-                <div class='list-color h-full flex items-center justify-center capitalize gap-2'>
-                    ${color}
-                </div>
-            `;
+//       colorElement.innerHTML = `
+//                 <div class='list-color h-full flex items-center justify-center capitalize gap-2'>
+//                     ${color}
+//                 </div>
+//             `;
 
-      listColor.appendChild(colorElement);
-    });
-  }
-}
+//       listColor.appendChild(colorElement);
+//     });
+//   }
+// }
 
 // Cart
 let listProductCart = document.querySelector(".cart-block .list-product-main");

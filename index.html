@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anvogue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+   
     <link rel="shortcut icon" href="./assets/images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -18,47 +22,39 @@
             <div class="top-nav-main flex justify-between max-md:justify-center h-full">
                 <div class="left-content flex items-center gap-5 max-md:hidden">
                     <div class="choose-type choose-language flex items-center gap-1.5">
-                        <div class="select relative">
-                            <p class="selected caption2 text-white">English</p>
-                            <ul class='list-option bg-white'>
-                                <li data-item="English" class="caption2 active">English</li>
-                                <li data-item="Espana" class="caption2">Espana</li>
-                                <li data-item="France" class="caption2">France</li>
-                            </ul>
+                        <div class="single-icon wishlist">
+                            <a class="selected caption2 text-white">English</a>
+                            <span class="separator" style=" color: white; margin: 0 5px;">|</span>
+                            <a class="selected caption2 text-white">العربية</a>
                         </div>
-                        <i class="ph ph-caret-down text-xs text-white"></i>
+                         
                     </div>
                     <div class="choose-type choose-currency flex items-center gap-1.5">
                         <div class="select relative">
-                            <p class="selected caption2 text-white">USD</p>
-                            <ul class='list-option bg-white'>
-                                <li data-item="USD" class="caption2 active">USD</li>
-                                <li data-item="EUR" class="caption2">EUR</li>
-                                <li data-item="GBP" class="caption2">GBP</li>
-                            </ul>
+                            <p class="selected caption2 text-white">AED</p>
+                            
                         </div>
-                        <i class="ph ph-caret-down text-xs text-white"></i>
+                        
                     </div>
                 </div>
-                <div class="text-center text-button-uppercase text-white flex items-center">
-                    New customers save 10% with the code GET10
-                </div>
+                
                 <div class="right-content flex items-center gap-5 max-md:hidden">
-                    <a href='https://www.facebook.com/' target='_blank'>
-                        <i class="icon-facebook text-white"></i>
-                    </a>
+                   
                     <a href='https://www.instagram.com/' target='_blank'>
                         <i class="icon-instagram text-white"></i>
                     </a>
-                    <a href='https://www.youtube.com/' target='_blank'>
-                        <i class="icon-youtube text-white"></i>
+
+                    <a href='https://www.snapchat.com/' target='_blank'>
+                        <i class="fab fa-snapchat-ghost text-white"></i>
                     </a>
-                    <a href='https://twitter.com/' target='_blank'>
-                        <i class="icon-twitter text-white"></i>
+                     
+                    <a href='https://www.tiktok.com/' target='_blank'>
+                         <i class="fab fa-tiktok text-white"></i>
                     </a>
-                    <a href='https://pinterest.com/' target='_blank'>
-                        <i class="icon-pinterest text-white"></i>
+                    <a href='https://www.whatsapp.com/' target='_blank'>
+                        <i class="fab fa-whatsapp text-white"></i>
                     </a>
+                  
                 </div>
 
             </div>
@@ -85,7 +81,13 @@
                                         HOME
                                     </a>
                                  </li>
-                                 
+                                 <li class='h-full relative'>
+                                    <a href="about.HTML" class='text-button-uppercase duration-300 h-full flex
+                                        items-center justify-center'>
+                                        ABOUT  
+                                    </a>
+                                   
+                                </li>
                                 <li class='h-full'>
                                     <a href="shop-breadcrumb1.html" class='text-button-uppercase duration-300 h-full flex
                                         items-center justify-center'>
@@ -95,10 +97,11 @@
                                 </li>
                              
                                  
+                              
                                 <li class='h-full relative'>
-                                    <a href="about.HTML" class='text-button-uppercase duration-300 h-full flex
+                                    <a href="contact.HTML" class='text-button-uppercase duration-300 h-full flex
                                         items-center justify-center'>
-                                        ABOUT US 
+                                        CONTACT 
                                     </a>
                                    
                                 </li>
@@ -116,9 +119,8 @@
                                     class="quantity wishlist-quantity absolute -right-1.5 -top-1.5 text-xs text-white bg-black w-4 h-4 flex items-center justify-center rounded-full">0</span>
                             </div>
                             <div class="cart-icon flex items-center relative cursor-pointer">
-                                <i class="ph-bold ph-handbag text-2xl"></i>
-                                <span
-                                    class="quantity cart-quantity absolute -right-1.5 -top-1.5 text-xs text-white bg-black w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                                <i class="ion-ios-cart text-2xl"></i>
+                                <span  class="quantity cart-quantity absolute -right-1.5 -top-1.5 text-xs text-white bg-black w-4 h-4 flex items-center justify-center rounded-full">0</span>
                             </div>
                         </div>
                     </div>
@@ -1006,7 +1008,7 @@
         <div class="container">
             <div class="heading flex flex-col items-center text-center">
                 <div class="heading3">What's new</div>
-                <div class="menu-tab bg-surface rounded-2xl mt-6">
+                <!-- <div class="menu-tab bg-surface rounded-2xl mt-6">
                     <div class="menu flex items-center gap-2 p-1">
                         <div class="indicator absolute top-1 bottom-1 bg-white rounded-full shadow-md duration-300">
                         </div>
@@ -1026,7 +1028,7 @@
                             data-item="shirt">
                             shirt</div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div
                 class="list-product four-product hide-product-sold grid xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-[30px] gap-4 md:mt-10 mt-6">
@@ -1134,8 +1136,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="list-product six-product hide-product-sold relative section-swiper-navigation style-outline style-small-border md:mt-10 mt-6">
+            <div class="list-product six-product hide-product-sold relative section-swiper-navigation style-outline style-small-border md:mt-10 mt-6">
                 <div class="swiper-button-prev2 sm:left-10 left-6">
                     <i class="ph-bold ph-caret-left text-xl"></i>
                 </div>
@@ -1207,164 +1208,38 @@
         </div>
     </div>
   
-    <div id="footer" class='footer'>
-        <div class="footer-main bg-surface">
+    <div id="footer" class="footer bg-surface">
+        <div class="footer-main">
             <div class="container">
-                <div class="content-footer md:py-[60px] py-10 flex justify-between flex-wrap gap-y-8">
-                    <div class="company-infor basis-1/4 max-lg:basis-full pr-7">
-                        <a href='index.html' class="logo inline-block">
-                            <div class="heading3 w-fit">Anvogue</div>
-                        </a>
-                        <div class='flex gap-3 mt-3'>
-                            <div class="flex flex-col ">
-                                <span class="text-button">Mail:</span>
-                                <span class="text-button mt-3">Phone:</span>
-                                <span class="text-button mt-3">Address:</span>
-                            </div>
-                            <div class="flex flex-col ">
-                                <span class=''>hi.avitex@gmail.com</span>
-                                <span class='mt-[14px]'>1-333-345-6868</span>
-                                <span class='mt-3 pt-1'>549 Oak St.Crystal Lake, IL 60014</span>
-                            </div>
+                <div class="testimonial-block md:pt-20 md:pb-16 pt-10 pb-8 md:mt-20 mt-10 bg-surface">
+                    <div class="container">
+                        <div class="flex justify-center mb-6">
+                            <img src="path_to_logo.png" alt="Logo" class="h-12">
                         </div>
-                    </div>
-                    <div class="right-content flex flex-wrap gap-y-8 basis-3/4 max-lg:basis-full">
-                        <div class="list-nav flex justify-between basis-2/3 max-md:basis-full gap-4">
-                            <div class="item flex flex-col basis-1/3 ">
-                                <div class="text-button-uppercase pb-3">Infomation</div>
-                                <a class='caption1 has-line-before duration-300 w-fit' href='contact.html'>Contact
-                                    us
-                                </a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2' href='#!'>
-                                    Career
-                                </a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2' href='my-account.html'>
-                                    My
-                                    Account</a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2' href='order-tracking.html'>
-                                    Order & Returns</a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2' href='faqs.html'>FAQs
-                                </a>
-                            </div>
-                            <div class="item flex flex-col basis-1/3 ">
-                                <div class="text-button-uppercase pb-3">Quick Shop</div>
-                                <a class='caption1 has-line-before duration-300 w-fit'
-                                    href='shop-breadcrumb1.html'>Women</a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2'
-                                    href='shop-breadcrumb1.html'>Men
-                                </a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2'
-                                    href='shop-breadcrumb1.html'>Clothes
-                                </a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2'
-                                    href='shop-breadcrumb1.html'>
-                                    Accessories
-                                </a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2'
-                                    href='blog-default.html'>Blog
-                                </a>
-                            </div>
-                            <div class="item flex flex-col basis-1/3 ">
-                                <div class="text-button-uppercase pb-3">Customer Services</div>
-                                <a class='caption1 has-line-before duration-300 w-fit' href='faqs.html'>FAQs
-                                </a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2' href='faqs.html'>Shipping
-                                </a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2' href='faqs.html'>Privacy
-                                    Policy</a>
-                                <a class='caption1 has-line-before duration-300 w-fit pt-2'
-                                    href='order-tracking.html'>Return &
-                                    Refund</a>
-                            </div>
-                        </div>
-                        <div class="newsletter basis-1/3 pl-7 max-md:basis-full max-md:pl-0">
-                            <div class="text-button-uppercase">Newletter</div>
-                            <div class="caption1 mt-3">Sign up for our newsletter and get 10% off your first
-                                purchase
-                            </div>
-                            <div class="input-block w-full h-[52px] mt-4">
-                                <form class='w-full h-full relative' action="post">
-                                    <input type="email" placeholder='Enter your e-mail'
-                                        class='caption1 w-full h-full pl-4 pr-14 rounded-xl border border-line'
-                                        required />
-                                    <button
-                                        class='w-[44px] h-[44px] bg-black flex items-center justify-center rounded-xl absolute top-1 right-1'>
-                                        <i class="ph ph-arrow-right text-xl text-white"></i>
-                                    </button>
-                                </form>
-                            </div>
-                            <div class="list-social flex items-center gap-6 mt-4">
-                                <a href='https://www.facebook.com/' target='_blank'>
-                                    <div class="icon-facebook text-2xl text-black"></div>
-                                </a>
-                                <a href='https://www.instagram.com/' target='_blank'>
-                                    <div class="icon-instagram text-2xl text-black"></div>
-                                </a>
-                                <a href='https://www.twitter.com/' target='_blank'>
-                                    <div class="icon-twitter text-2xl text-black"></div>
-                                </a>
-                                <a href='https://www.youtube.com/' target='_blank'>
-                                    <div class="icon-youtube text-2xl text-black"></div>
-                                </a>
-                                <a href='https://www.pinterest.com/' target='_blank'>
-                                    <div class="icon-pinterest text-2xl text-black"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="footer-bottom py-3 flex items-center justify-between gap-5 max-lg:justify-center max-lg:flex-col border-t border-line">
-                    <div class="left flex items-center gap-8">
-                        <div class="copyright caption1 text-secondary">©2024 Anvogue. All Rights Reserved.</div>
-                        <div class="select-block flex items-center gap-5 max-md:hidden">
-                            <div class="choose-language flex items-center gap-1.5">
-                                <select name="language" id="chooseLanguageFooter" class='caption2 bg-transparent'>
-                                    <option value="English">English</option>
-                                    <option value="Espana">Espana</option>
-                                    <option value="France">France</option>
-                                </select>
-                                <i class="ph ph-caret-down text-xs text-[#1F1F1F]"></i>
-                            </div>
-                            <div class="choose-currency flex items-center gap-1.5">
-                                <select name="currency" id="chooseCurrencyFooter" class='caption2 bg-transparent'>
-                                    <option value="USD">USD</option>
-                                    <option value="EUR">EUR</option>
-                                    <option value="GBP">GBP</option>
-                                </select>
-                                <i class="ph ph-caret-down text-xs text-[#1F1F1F]"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="right flex items-center gap-2">
-                        <div class="caption1 text-secondary">Payment:</div>
-                        <div class="payment-img">
-                            <img src='./assets/images/payment/Frame-0.png' alt='payment' class='w-9' />
-                        </div>
-                        <div class="payment-img">
-                            <img src='./assets/images/payment/Frame-1.png' alt='payment' class='w-9' />
-                        </div>
-                        <div class="payment-img">
-                            <img src='./assets/images/payment/Frame-2.png' alt='payment' class='w-9' />
-                        </div>
-                        <div class="payment-img">
-                            <img src='./assets/images/payment/Frame-3.png' alt='payment' class='w-9' />
-                        </div>
-                        <div class="payment-img">
-                            <img src='./assets/images/payment/Frame-4.png' alt='payment' class='w-9' />
-                        </div>
-                        <div class="payment-img">
-                            <img src='./assets/images/payment/Frame-5.png' alt='payment' class='w-9' />
+                        <div class="flex justify-center space-x-6 mb-6">
+                            <a href="index.html" class="text-lg">HOME</a>
+                            <a href="about.html" class="text-lg">ABOUT</a>
+                            <a href="shop-breadcrumb1.html" class="text-lg">STORE</a>
+                            <a href="contact.html" class="text-lg">CONTACT</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom py-3 flex justify-center border-t border-line bg-dark">
+            <div class="caption1 text-secondary text-center">
+                ©2024 MWWEEZ - All Rights Reserved.
+            </div>
+        </div>
     </div>
+    
+      
+ 
+    
+    
 
 
-    <a class="scroll-to-top-btn" href="#top-nav"><i class="ph-bold ph-caret-up"></i></a>
-
+   
     <!-- Modal -->
     <div class="modal-newsletter">
         <div class="container h-full flex items-center justify-center w-full">
@@ -1483,434 +1358,7 @@
             </div>
         </div>
     </div>
-
-    <div class='modal-search-block'>
-        <div class='modal-search-main md:p-10 p-6 rounded-[32px]'>
-            <div class="form-search relative w-full">
-                <i class="ph ph-magnifying-glass absolute heading5 right-6 top-1/2 -translate-y-1/2 cursor-pointer"></i>
-                <input type="text" placeholder='Searching...'
-                    class='text-button-lg h-14 rounded-2xl border border-line w-full pl-6 pr-12' />
-            </div>
-            <div class="keyword mt-8">
-                <div class="heading5">Feature keywords Today</div>
-                <div class="list-keyword flex items-center flex-wrap gap-3 mt-4">
-                    <button
-                        class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">
-                        Dress
-                    </button>
-                    <button
-                        class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">
-                        T-shirt
-                    </button>
-                    <button
-                        class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">
-                        Underwear
-                    </button>
-                    <button
-                        class="item px-4 py-1.5 border border-line rounded-full cursor-pointer duration-300 hover:bg-black hover:text-white">
-                        Top
-                    </button>
-                </div>
-            </div>
-            <div class="list-recent mt-8">
-                <div class="heading6">Recently viewed products</div>
-                <div
-                    class="list-product pb-5 hide-product-sold grid xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-[30px] gap-4 mt-4">
-                    <div class="product-item grid-type" data-item="14">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div
-                                    class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New
-                                </div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div
-                                        class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div
-                                        class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                </div>
-                                <div
-                                    class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div
-                                        class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div
-                                        class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class='progress-sold bg-red absolute left-0 top-0 h-full'>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Sold:
-                                            </span>
-                                            <span class='max-sm:text-xs'>12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Available:
-                                            </span>
-                                            <span class='max-sm:text-xs'>88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">
-                                    Faux-leather trousers</div>
-                                <div
-                                    class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class='color-item bg-black w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Black
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-green w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Green
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-red w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">
-                                        $28.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$36.00</del>
-                                    </div>
-                                    <div
-                                        class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item grid-type" data-item="13">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div
-                                    class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New
-                                </div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div
-                                        class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div
-                                        class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                </div>
-                                <div
-                                    class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div
-                                        class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div
-                                        class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class='progress-sold bg-red absolute left-0 top-0 h-full'>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Sold:
-                                            </span>
-                                            <span class='max-sm:text-xs'>12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Available:
-                                            </span>
-                                            <span class='max-sm:text-xs'>88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">
-                                    Faux-leather trousers</div>
-                                <div
-                                    class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class='color-item bg-black w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Black
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-green w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Green
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-red w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">
-                                        $35.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$45.00</del>
-                                    </div>
-                                    <div
-                                        class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item grid-type" data-item="12">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div
-                                    class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New
-                                </div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div
-                                        class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div
-                                        class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                </div>
-                                <div
-                                    class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div
-                                        class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div
-                                        class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class='progress-sold bg-red absolute left-0 top-0 h-full'>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Sold:
-                                            </span>
-                                            <span class='max-sm:text-xs'>12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Available:
-                                            </span>
-                                            <span class='max-sm:text-xs'>88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">
-                                    Off-the-Shoulder Blouse</div>
-                                <div
-                                    class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class='color-item bg-red w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-yellow w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            yellow
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-green w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            green
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">
-                                        $24.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$32.00</del>
-                                    </div>
-                                    <div
-                                        class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-item grid-type" data-item="11">
-                        <div class="product-main cursor-pointer block">
-                            <div class="product-thumb bg-white relative overflow-hidden rounded-2xl">
-                                <div
-                                    class="product-tag text-button-uppercase bg-green px-3 py-0.5 inline-block rounded-full absolute top-3 left-3 z-[1]">
-                                    New
-                                </div>
-                                <div class="list-action-right absolute top-3 right-3 max-lg:hidden">
-                                    <div
-                                        class="add-wishlist-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Add To Wishlist</div>
-                                        <i class="ph ph-heart text-lg"></i>
-                                    </div>
-                                    <div
-                                        class="compare-btn w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative mt-2">
-                                        <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                            Compare Product</div>
-                                        <i class="ph ph-arrow-counter-clockwise text-lg compare-icon"></i>
-                                        <i class="ph ph-check-circle text-lg checked-icon"></i>
-                                    </div>
-                                </div>
-                                <div class="product-img w-full h-full aspect-[3/4]">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                    <img class='w-full h-full object-cover duration-700'
-                                        src="./assets/images/product/1000x1000.png" alt="img">
-                                </div>
-                                <div
-                                    class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
-                                    <div
-                                        class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                        Quick View</div>
-                                    <div
-                                        class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white">
-                                        Add To Cart
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-infor mt-4 lg:mb-7">
-                                <div class="product-sold sm:pb-4 pb-2">
-                                    <div class="progress bg-line h-1.5 w-full rounded-full overflow-hidden relative">
-                                        <div class='progress-sold bg-red absolute left-0 top-0 h-full'>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center justify-between gap-3 gap-y-1 flex-wrap mt-2">
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Sold:
-                                            </span>
-                                            <span class='max-sm:text-xs'>12</span>
-                                        </div>
-                                        <div class="text-button-uppercase">
-                                            <span class='text-secondary2 max-sm:text-xs'>Available:
-                                            </span>
-                                            <span class='max-sm:text-xs'>88</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-name text-title duration-300">
-                                    Off-the-Shoulder Blouse</div>
-                                <div
-                                    class="list-color py-2 max-md:hidden flex items-center gap-3 flex-wrap duration-500">
-                                    <div class='color-item bg-red w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            Red
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-yellow w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            yellow
-                                        </div>
-                                    </div>
-                                    <div class='color-item bg-green w-8 h-8 rounded-full duration-300 relative'>
-                                        <div
-                                            class="tag-action bg-black text-white caption2 capitalize px-1.5 py-0.5 rounded-sm">
-                                            green
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="product-price-block flex items-center gap-2 flex-wrap mt-1 duration-300 relative z-[1]">
-                                    <div class="product-price text-title">
-                                        $32.00</div>
-                                    <div class="product-origin-price caption1 text-secondary2">
-                                        <del>$40.00</del>
-                                    </div>
-                                    <div
-                                        class="product-sale caption1 font-medium bg-green px-3 py-0.5 inline-block rounded-full">
-                                        -20%
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+ 
 
     <div class='modal-wishlist-block'>
         <div class='modal-wishlist-main py-6'>
@@ -2186,7 +1634,7 @@
         </div>
     </div>
 
-    <div class='modal-sizeguide-block'>
+    <!-- <div class='modal-sizeguide-block'>
         <div class='modal-sizeguide-main md:p-10 p-6 rounded-[32px]'>
             <div
                 class="close-btn absolute right-5 top-5 w-6 h-6 rounded-full bg-surface flex items-center justify-center duration-300 cursor-pointer hover:bg-black hover:text-white">
@@ -2303,7 +1751,7 @@
                 </tr>
             </table>
         </div>
-    </div>
+    </div> -->
 
     <div class='modal-compare-block'>
         <div class='modal-compare-main py-6'>
@@ -2411,7 +1859,7 @@
                                 perfect to be used in the any place where you need to store.</div>
                         </div>
                         <div class="list-action mt-6">
-                            <div class="choose-color">
+                            <!-- <div class="choose-color">
                                 <div class="text-title">Colors: <span class='text-title color'></span>
                                 </div>
                                 <div class="list-color flex items-center gap-2 flex-wrap mt-3">
@@ -2440,7 +1888,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="choose-size mt-5">
                                 <div class="heading flex items-center justify-between">
                                     <div class="text-title">Size: <span class='text-title size'></span>

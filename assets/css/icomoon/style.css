@@ -115,3 +115,89 @@
 .icon-bag:before {
   content: "\e91d";
 }
+.footer {
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 10px 0;
+}
+
+.footer-main .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-benefit {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.benefit-item {
+  text-align: center;
+}
+
+.benefit-item i {
+  font-size: 3rem;
+  color: #333;
+}
+
+.heading6 h3 {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.heading6 p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.testimonial-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.testimonial-block .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-block .container img {
+  height: 48px;
+}
+
+.testimonial-block .container a {
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.testimonial-block .container a:hover {
+  color: #000;
+}
+
+.testimonial-block .container p {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-bottom .caption1 {
+  font-size: 0.875rem;
+  color: #ccc;
+  text-align: center;
+}
